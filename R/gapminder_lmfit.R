@@ -14,11 +14,13 @@
 #' @return list
 #' @export
 #' @examples
+#' library(gapminder)
 #' gapminder_lmfit("Canada")
 #' gapminder_lmfit("Canada","year","lifeExp")
 #' @importFrom dplyr %>%
 #' @importFrom dplyr arrange
 #' @importFrom dplyr mutate
+#' @import gapminder
 
 gapminder_lmfit <- function(countryName,x="year",y="pop",offset=1952)
 {

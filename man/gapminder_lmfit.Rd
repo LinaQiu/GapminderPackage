@@ -26,6 +26,7 @@ It can be used to carry out regression between pop/lifeExp/gdpPercap and year, t
 and fitError(=sum of residuals^2) of fitted linear model back at the same time.
 }
 \examples{
+library(gapminder)
 gapminder_lmfit("Canada")
 gapminder_lmfit("Canada","year","lifeExp")
 }

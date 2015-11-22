@@ -1,22 +1,23 @@
 Package: GapminderPackage
 Title: Make it easier to see whether there is any linear relationship between
-    population and time for countries in GAPMINDER dataset.
+    pop/lifeExp/gdpPercap and year for countries in gapminder dataset
 Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: While we take a look into population and time in dataset GAPMINDER,
+Authors@R: person("Lina", "Qiu", email = "qiulina1994@126.com", role = c("aut", "cre"))
+Description: While we take a look into population and time in dataset gapminder,
     we would want to find is there any linear relationship them. The existing
     function lm() can help us fit a linear model between them, but it only returns
     coefficients of the fitted linear model. However sometimes, we not only want
     to see the coefficients of the fitted linear model, but also want to check the
     residuals and how well the data fit the linear model. Thus, this package is
     created to help you find the linear relationship between population and time for
-    different countries in GAPMINDER and get a intuitive view on how well country's
+    different countries in gapminder and get a intuitive view on how well country's
     population and time fit the linear model by creating a table and plot for the
     fitted linear model.
-Depends: 
+Depends:
     R (>= 3.2.2)
 License: MIT + file LICENSE
 LazyData: true
 RoxygenNote: 5.0.1
 Suggests: testthat
-Imports: dplyr
+Imports: dplyr,
+    gapminder
