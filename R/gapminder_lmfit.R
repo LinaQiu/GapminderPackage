@@ -30,7 +30,6 @@ gapminder_lmfit <- function(countryName,x="year",y="pop",offset=1952)
 
   ##Get names for all countries in gapminder dataset, which are pre-stored at a file named "countryNames"
   countryNames <- (gapminder %>% arrange(year) %>% head(142))$country    ##because we know there are 142 countries in gapminder dataset in total
-  countryNames <- as.character(countryNames)
 
   if(!(countryName %in% countryNames)){
     return("The country name you provided not found in gapminder. Please try an existing country name.")
