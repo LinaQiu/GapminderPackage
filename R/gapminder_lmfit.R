@@ -39,7 +39,7 @@ gapminder_lmfit <- function(countryName,x="year",y="pop",offset=1952)
   if(!(y %in% c("pop","lifeExp","gdpPercap"))){
     return("Invalid parameter y. You can leave y equal to its default value 'pop' or set it as pop/lifeExp/gdpPercap.")
   }
-  countryData <- gapminder %>% filter(country==countryName)
+  countryData <- gapminder %>% filter(gapminder$country==countryName)
   results <- vector("list",4)
   lmfit <- lm(countryData[[y]]~I(countryData[[x]]-offset),countryData)
   intersect <- setNames(coef(lmfit)[1],"intercept")
