@@ -13,7 +13,7 @@ Description: While we take a look into population and time in dataset gapminder,
     different countries in gapminder and get a intuitive view on how well country's
     population and time fit the linear model by creating a table and plot for the
     fitted linear model.
-Depends:
+Depends: 
     R (>= 3.2.2)
 License: MIT + file LICENSE
 LazyData: true
@@ -21,3 +21,5 @@ RoxygenNote: 5.0.1
 Suggests: testthat
 Imports: dplyr,
     gapminder
+URL: https://github.com/LinaQiu/GapminderPackage
+BugReports: https://github.com/LinaQiu/GapminderPackage/issues

@@ -8,7 +8,7 @@ test_that("gapminder_lmfit() returns a list",{
 
 test_that("Country not found results in error",{
   library(gapminder)
-  test_country <- gapminder_lmfit("Lol","year","pop",offset = 1952)
+  test_country <- gapminder_lmfit("Lol")
   expect_identical(test_country,"The country name you provided not found in gapminder. Please try an existing country name.")
 })
 
